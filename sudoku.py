@@ -1,16 +1,12 @@
 from random import sample    # import sample function from random module
 import random                # import random module for randint function
-li=[    ['_','_','_','_','_','_','_','_','_'],
-        ['_','_','_','_','_','_','_','_','_'],
-        ['_','_','_','_','_','_','_','_','_'],
-        ['_','_','_','_','_','_','_','_','_'],
-        ['_','_','_','_','_','_','_','_','_'],
-        ['_','_','_','_','_','_','_','_','_'],
-        ['_','_','_','_','_','_','_','_','_'],
-        ['_','_','_','_','_','_','_','_','_'],
-        ['_','_','_','_','_','_','_','_','_']   ]
+a='_'
+b=list(a*9)
+li=[]
+for _ in range(9):
+    li.append(b.copy())
 
- # create a list of random non-repeating numbers from 1-9
+# create a list of random non-repeating numbers from 1-9
 
 num1  = sample(range(1,10),9)          
 num2  = sample(range(1,10),9)
