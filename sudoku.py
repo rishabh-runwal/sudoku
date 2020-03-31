@@ -113,6 +113,7 @@ for i in range(l):
 print("Generated puzzle is : ")
 
 print_board(li)
+input("Press Enter to view Solution")
 solver(li)
 print("Solved puzzle is:\n ")
 print_board(li)
